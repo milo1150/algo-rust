@@ -1,1 +1,1 @@
-just cargo test
+Run cargo test.

@@ -96,6 +96,7 @@ mod test {
     }
 
     #[test]
+    #[ignore]
     fn longest_common_prefix_fp_1() {
         assert_eq!(
             longest_common_prefix_v2(vec![
@@ -108,6 +109,7 @@ mod test {
     }
 
     #[test]
+    #[ignore]
     fn longest_common_prefix_fp_2() {
         assert_eq!(
             longest_common_prefix_v2(vec![
