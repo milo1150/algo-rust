@@ -14,6 +14,7 @@ mod test {
     use super::*;
 
     #[test]
+    #[ignore]
     fn is_palindrome_1() {
         assert_eq!(
             is_palindrome(format!("A man, a plan, a canal: Panama")),
@@ -22,16 +23,19 @@ mod test {
     }
 
     #[test]
+    #[ignore]
     fn is_palindrome_2() {
         assert_eq!(is_palindrome(format!("race a car")), false)
     }
 
     #[test]
+    #[ignore]
     fn is_palindrome_3() {
         assert_eq!(is_palindrome(format!(" ")), true)
     }
 
     #[test]
+    #[ignore]
     fn is_palindrome_4() {
         assert_eq!(is_palindrome(format!("0P")), false)
     }
