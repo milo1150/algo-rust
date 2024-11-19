@@ -3,19 +3,15 @@ pub fn move_zeroes(nums: &mut Vec<i32>) {
     if nums.len() > 10_i32.pow(4) as usize {
         return;
     }
-    println!("input = {nums:?}");
     let mut result: Vec<i32> = vec![];
     let mut skip_index: i32 = 0;
     for (_, num) in nums.iter().enumerate() {
-        println!("result before = {result:?}");
         if *num == 0 {
             result.push(0);
             skip_index += 1;
         } else {
             result.insert(result.len() - skip_index as usize, *num as i32);
         }
-
-        println!("result after = {result:?}");
     }
     *nums = result
 }
